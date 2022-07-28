@@ -1,0 +1,3 @@
+[submodule "fswebcam"]
+	path = fswebcam
+	url = https://github.com/fsphil/fswebcam.git
