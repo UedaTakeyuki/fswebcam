@@ -4,4 +4,7 @@ go 1.18
 
 replace local.packages/fswebcam => ../../fswebcam
 
-require local.packages/fswebcam v0.0.0-00010101000000-000000000000 // indirect
+require (
+	github.com/UedaTakeyuki/fswebcam v0.0.0-20220728130019-fcc917773c08 // indirect
+	local.packages/fswebcam v0.0.0-00010101000000-000000000000 // indirect
+)
