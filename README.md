@@ -12,6 +12,8 @@ sudo sh setup.sh
 ```
 
 ### Code
+Import this module and call **Capture()** with fswebcam command line params start with **fswebcam** as follows.
+
 
 ```
 import (
