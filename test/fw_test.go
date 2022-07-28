@@ -2,8 +2,7 @@ package fswebcam
 
 import (
 	"testing"
-	"github.com/UedaTakeyuki/fswebcam"
-//	fw "local.packages/fswebcam"
+	fw "github.com/UedaTakeyuki/fswebcam"
 )
 
 func Test(t *testing.T) {
