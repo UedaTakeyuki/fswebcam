@@ -7,5 +7,5 @@ import (
 )
 
 func Test(t *testing.T) {
-	fw.Capture()
+	fw.Capture("fswebcam -d v4l2:/dev/video0 kerokero.jpg")
 }
