@@ -1,10 +1,6 @@
-package fswebcam
+package fw
 
 /*
-#ifdef HAVE_CONFIG_H
-#include "config.h"
-#endif
-
 #include <stdio.h>
 #include <getopt.h>
 #include <string.h>
@@ -34,8 +30,8 @@ import "C"
 
 import "strings"
 
-func Capture(fswebcamCommandString string) {
-	args := strings.Split(fswebcamCommandString, " ") // fswebcam -d v4l2:/dev/video0 kerokero.jpg
+func Capture() {
+	args := strings.Split("fswebcam -d v4l2:/dev/video0 kerokero.jpg", " ")
 	argc := C.int(len(args))
 	argv := make([]*C.char, argc)
 	for i, arg := range args {
