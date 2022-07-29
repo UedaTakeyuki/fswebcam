@@ -30,8 +30,9 @@ import "C"
 
 import "strings"
 
-func Capture(commandLine string) {
-	args := strings.Split(commandLine, " ") // fswebcam -d v4l2:/dev/video0 kerokero.jpg
+//func Capture(commandLine string) {
+func Capture(args []string) {
+//	args := strings.Split(commandLine, " ") // fswebcam -d v4l2:/dev/video0 kerokero.jpg
 	argc := C.int(len(args))
 	argv := make([]*C.char, argc)
 	for i, arg := range args {

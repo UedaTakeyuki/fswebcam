@@ -6,5 +6,5 @@ import (
 )
 
 func Test(t *testing.T) {
-	fw.Capture("fswebcam -d v4l2:/dev/video0 kerokero.jpg")
+	fw.Capture([]string{"fswebcam", "--no-timestamp", "--title", "©Atelier UEDA", "-d",  "v4l2:/dev/video0", "kerokero.jpg"})
 }
