@@ -22,6 +22,9 @@ import (
 
 func main(){
   // call Capture with fswebcam command line string
-  fw.Capture("fswebcam -d v4l2:/dev/video0 kerokero.jpg") 
+  fw.Capture([]string{"fswebcam", "-d", "v4l2:/dev/video0", "kerokero.jpg") 
 }
 ```
+
+# History
+- 1.0.0  2022.07.29  first version.
